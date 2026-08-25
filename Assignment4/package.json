@@ -1,0 +1,13 @@
+{
+  "name": "assignment4",
+  "version": "1.0.0",
+  "description": "This project demonstrates basic file system operations using the Node.js `fs` module.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
