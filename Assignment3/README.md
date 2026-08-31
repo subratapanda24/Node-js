@@ -57,7 +57,7 @@ The `student.txt` file should be created successfully.
 
 ### Output Screenshot
 
-![Task 1 Output](screenshots/task1.png)
+![Task 1 Output](Screenshots/task1.png)
 
 ---
 
@@ -78,7 +78,7 @@ Technology: Node.js
 
 ### Output Screenshot
 
-![Task 2 Output](screenshots/task2.png)
+![Task 2 Output](Screenshots/task2.png)
 
 ---
 
@@ -109,7 +109,7 @@ City: Mumbai
 
 ### Output Screenshot
 
-![Task 3 Output](screenshots/task3.png)
+![Task 3 Output](Screenshots/task3.png)
 
 ---
 
@@ -137,7 +137,7 @@ File renamed successfully
 
 ### Output Screenshot
 
-![Task 4 Output](screenshots/task4.png)
+![Task 4 Output](Screenshots/task4.png)
 
 ---
 
@@ -153,7 +153,7 @@ studentDetails.txt deleted successfully
 
 ### Output Screenshot
 
-![Task 5 Output](screenshots/task5.png)
+![Task 5 Output](Screenshots/task5.png)
 
 ---
 
