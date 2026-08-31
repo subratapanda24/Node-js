@@ -84,7 +84,7 @@ Technology: Node.js
 
 # Task 3: Update Student Information
 
-In this task, `fs.appendFile()` is used to add additional information to the existing `student.txt` file.
+In this task, `fs.appendFile()` is used to add additional informations to the existing `student.txt` file.
 
 The following information is added:
 
