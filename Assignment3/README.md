@@ -1,119 +1,217 @@
-# NodeJS Basics Assignment
+# Student File Management Using Node.js
 
 ## Assignment Overview
 
-This assignment introduces the basics of Node.js and JavaScript programming. The objective is to create basic Node.js programs, execute them using Node.js, and understand how JavaScript code runs in the terminal.
+This project demonstrates basic file system operations using the built-in Node.js `fs` module.
 
-## Objectives
+The program performs the following operations:
 
-* Understand the basics of Node.js.
-* Create and execute a Node.js program.
-* Use `console.log()` to display output.
-* Work with JavaScript variables.
-* Understand how to run JavaScript files using Node.js.
+1. Create a student information file
+2. Read the student information
+3. Update the existing file
+4. Rename the file
+5. Delete the file
 
 ---
 
-# Task 1: First Node.js Program
+## Technologies Used
 
-## Description
+* Node.js
+* JavaScript
+* Node.js `fs` Module
 
-The first task is to create a Node.js program that displays two messages in the terminal.
+---
 
-### File: `app.js`
+## Project Structure
 
-```javascript
-console.log("Hello, Node.js!");
-console.log("I am learning backend development");
+```text
+student-file-assignment/
+│
+├── index.js
+├── package.json
+├── README.md
+├── task1.png
+├── task2.png
+├── task3.png
+├── task4.png
+└── task5.png
 ```
 
-### Command Used
+---
 
-```bash
-node app.js
+# Task 1: Create Student Information File
+
+In this task, `fs.writeFile()` is used to create a file named `student.txt` and store the student information.
+
+The file contains:
+
+```text
+Name: Subrata Panda
+Course: Full Stack Development
+Technology: Node.js
+```
+
+### Expected Result
+
+The `student.txt` file should be created successfully.
+
+### Output Screenshot
+
+![Task 1 Output](screenshots/task1.png)
+
+---
+
+# Task 2: Read Student Information
+
+In this task, `fs.readFile()` is used to read the contents of `student.txt`.
+
+The complete student information is displayed in the terminal.
+
+### Expected Result
+
+```text
+Student Information:
+Name: Subrata Panda
+Course: Full Stack Development
+Technology: Node.js
 ```
 
 ### Output Screenshot
 
-![Task 1 Output Screenshot](Screenshots/task1.png)
-
-### Expected Output
-
-```text
-Hello, Node.js!
-I am learning backend development
-```
+![Task 2 Output](screenshots/task2.png)
 
 ---
 
-# Task 2: Simple Introduction Program
+# Task 3: Update Student Information
 
-## Description
+In this task, `fs.appendFile()` is used to add additional information to the existing `student.txt` file.
 
-The second task is to create a Node.js program that displays personal information such as name, education, current learning, and career goal.
+The following information is added:
 
-### File: `introduction.js`
-
-```javascript
-const name = "Subrata";
-const education = "B.Tech CSE";
-const currentLearning = "Node.js";
-const goal = "Software Developer";
-
-console.log("Name:", name);
-console.log("Education:", education);
-console.log("Current Learning:", currentLearning);
-console.log("Goal:", goal);
+```text
+Experience: 1 Year
+City: Mumbai
 ```
 
-### Command Used
+The existing student information remains unchanged.
 
-```bash
-node introduction.js
+### Expected Result
+
+```text
+Updated Student Information:
+
+Name: Subrata Panda
+Course: Full Stack Development
+Technology: Node.js
+Experience: 1 Year
+City: Mumbai
 ```
 
 ### Output Screenshot
 
-![Task 2 Output Screenshot](Screenshots/task2.png)
+![Task 3 Output](screenshots/task3.png)
 
-### Expected Output
+---
+
+# Task 4: Manage File Name
+
+In this task, `fs.rename()` is used to change the file name.
+
+The file is renamed from:
 
 ```text
-Name: Subrata
-Education: B.Tech CSE
-Current Learning: Node.js
-Goal: Software Developer
+student.txt
 ```
 
----
-
-# Project Structure
+to:
 
 ```text
-Assignment3
-│
-├── Screenshots
-│   ├── task1.png
-│   └── task2.png
-│
-├── app.js
-├── introduction.js
-└── README.md
+studentDetails.txt
+```
+
+### Expected Result
+
+```text
+File renamed successfully
+```
+
+### Output Screenshot
+
+![Task 4 Output](screenshots/task4.png)
+
+---
+
+# Task 5: Remove File
+
+In this task, `fs.unlink()` is used to delete the `studentDetails.txt` file.
+
+### Expected Result
+
+```text
+studentDetails.txt deleted successfully
+```
+
+### Output Screenshot
+
+![Task 5 Output](screenshots/task5.png)
+
+---
+
+# How to Run the Program
+
+## Step 1: Open the Project Folder
+
+Open the project folder in Visual Studio Code.
+
+## Step 2: Open the Terminal
+
+Open the integrated terminal in VS Code.
+
+## Step 3: Run the Program
+
+Run the following command:
+
+```bash
+node index.js
+```
+
+The program will perform all five file operations in sequence:
+
+```text
+Create File
+    ↓
+Read File
+    ↓
+Update File
+    ↓
+Rename File
+    ↓
+Delete File
 ```
 
 ---
 
-# Commands Used
+# File System Methods Used
 
-### Task 1
+| Method            | Purpose                                                    |
+| ----------------- | ---------------------------------------------------------- |
+| `fs.writeFile()`  | Creates `student.txt` and writes student information       |
+| `fs.readFile()`   | Reads and displays file content                            |
+| `fs.appendFile()` | Adds additional information without removing existing data |
+| `fs.rename()`     | Renames `student.txt` to `studentDetails.txt`              |
+| `fs.unlink()`     | Deletes `studentDetails.txt`                               |
 
-```bash
-node app.js
-```
-
-### Task 2
-
-```bash
-node introduction.js
-```
 ---
+
+# Conclusion
+
+This project demonstrates the use of the Node.js `fs` module for performing basic file system operations.
+
+The program successfully:
+
+* Creates a file
+* Reads file contents
+* Updates an existing file
+* Renames a file
+* Deletes a file
+* Handles errors during file operations
