@@ -1,4 +1,3 @@
-````markdown
 # Express.js Basics Assignment
 
 This assignment demonstrates the basics of creating an Express.js server, defining routes, handling route parameters, query parameters, and accessing request information.
