@@ -293,6 +293,4 @@ Through this assignment, I learned:
 This assignment provides a basic understanding of routing and request handling in Express.js.
 
 It demonstrates how data can be received through basic routes, route parameters, multiple route parameters, and query parameters.
-
 ```
-
