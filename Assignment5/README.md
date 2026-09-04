@@ -30,8 +30,7 @@ Assignment5/
 ├── package-lock.json
 └── README.md
 
-
- Technologies Used
+## Technologies Used
 Node.js
 Express.js
 JavaScript
@@ -144,7 +143,7 @@ GET /search?name=john
 
 This helps understand how the Express server receives and processes HTTP requests.
 
-▶ How to Run the Project
+## ▶ How to Run the Project
 1. Install Dependencies
 
 Open the terminal inside the project folder and run:
@@ -214,7 +213,8 @@ How to read query parameters using req.query
 How to access request method and URL
 How the request-response cycle works in Express.js
 How to test API routes using a browser or API testing tool
- Conclusion
+
+##Conclusion
 
 This assignment provides a basic understanding of routing and request handling
 in Express.js. It demonstrates how different types of data can be received
