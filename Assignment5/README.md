@@ -1,10 +1,11 @@
+````markdown
 # Express.js Basics Assignment
 
-This assignment demonstrates the basics of creating an Express.js server, 
-defining routes, handling route parameters, query parameters, and accessing 
-request information.
+This assignment demonstrates the basics of creating an Express.js server, defining routes, handling route parameters, query parameters, and accessing request information.
 
-##  Project Structure
+---
+
+## Project Structure
 
 ```text
 Assignment5/
@@ -29,193 +30,270 @@ Assignment5/
 ├── package.json
 ├── package-lock.json
 └── README.md
+````
 
-## Technologies Used
-Node.js
-Express.js
-JavaScript
-Task 1: Basic Routes
-Description
+---
+
+## 🛠️ Technologies Used
+
+* Node.js
+* Express.js
+* JavaScript
+
+---
+
+## Task 1 — Basic Routes
+
+### Description
 
 Created a simple Express server with multiple basic routes.
 
-Routes
-Method	Route	Response
-GET	/	Welcome to Home Page
-GET	/about	This is About Page
-GET	/contact	This is Contact Page
-Example
+### Routes
+
+| Method | Route      | Response             |
+| ------ | ---------- | -------------------- |
+| GET    | `/`        | Welcome to Home Page |
+| GET    | `/about`   | This is About Page   |
+| GET    | `/contact` | This is Contact Page |
+
+### Example
+
+**Request**
+
+```text
 GET /
+```
 
-Response:
+**Response**
 
+```text
 Welcome to Home Page
-Task 2: Route Parameter
-Description
+```
+
+---
+
+## Task 2 — Route Parameter
+
+### Description
 
 Created a dynamic route that accepts a user's name from the URL.
 
-Route
+### Route
+
+```text
 GET /user/:name
+```
 
-The :name part is a dynamic route parameter.
+Here, `:name` is a dynamic route parameter.
 
-Example
+### Example
+
+**Request**
+
+```text
 GET /user/john
+```
 
-Response:
+**Response**
 
+```text
 Hello john
+```
 
-Another example:
+---
 
-GET /user/alex
+## Task 3 — Multiple Route Parameters
 
-Response:
-
-Hello alex
-Task 3: Multiple Route Parameters
-Description
+### Description
 
 Created a route that accepts multiple dynamic values from the URL.
 
-Route
+### Route
+
+```text
 GET /product/:id/:category
+```
 
 The route accepts:
 
-id → Product ID
-category → Product Category
-Example
+* `id` → Product ID
+* `category` → Product Category
+
+### Example
+
+**Request**
+
+```text
 GET /product/101/electronics
+```
 
-Response:
+**Response**
 
+```text
 Product ID: 101, Category: electronics
+```
 
-Another example:
+---
 
-GET /product/205/clothing
+## Task 4 — Query Parameters
 
-Response:
+### Description
 
-Product ID: 205, Category: clothing
-Task 4: Query Parameters
-Description
+Created a search route that reads data using query parameters.
 
-Created a search route that reads values using query parameters.
+### Route
 
-Route
+```text
 GET /search
+```
 
-Query parameters are passed after ? in the URL.
+### Example
 
-Example
+**Request**
+
+```text
 GET /search?name=john&role=developer
+```
 
-Response:
+**Response**
 
+```text
 Name: john, Role: developer
+```
 
-The query parameters are accessed using:
+### Query Parameters Used
 
+```javascript
 req.query.name
 req.query.role
-Another Example
-GET /search?name=alex&role=designer
+```
 
-Response:
+---
 
-Name: alex, Role: designer
-Task 5: Request-Response Understanding
-Description
+## Task 5 — Request-Response Understanding
 
-This task demonstrates how to access information about incoming requests.
+### Description
 
-For every route, the server prints the following information in the terminal:
+Displays request information in the terminal for every route.
 
-Request Method
-Request URL
-Example Terminal Output
+The server prints:
+
+* Request Method
+* Request URL
+
+### Example Terminal Output
+
+```text
 GET /about
 GET /user/john
 GET /search?name=john
+```
 
-This helps understand how the Express server receives and processes HTTP requests.
+---
 
-## ▶ How to Run the Project
-1. Install Dependencies
+## ▶ How to Run
 
-Open the terminal inside the project folder and run:
+### 1. Install Dependencies
 
+Open the terminal in the project folder:
+
+```bash
 npm install
+```
 
-This installs the dependencies listed in package.json.
+### 2. Run a Task
 
-2. Run a Task
+Each task contains its own `server.js`.
 
-Each task has its own server.js.
+For Task 1:
 
-For example, to run Task 1:
-
+```bash
 cd task1
 node server.js
+```
 
-Similarly:
+For Task 2:
 
+```bash
 cd task2
 node server.js
+```
+
+For Task 3:
+
+```bash
 cd task3
 node server.js
+```
+
+For Task 4:
+
+```bash
 cd task4
 node server.js
+```
+
+For Task 5:
+
+```bash
 cd task5
 node server.js
-3. Test the Routes
+```
 
-Once the server is running, open the required URL in a browser or API testing tool such as Thunder Client.
+---
 
-For example:
+## Testing
 
-http://localhost:3000/
+The routes can be tested using a browser or Thunder Client.
 
-or:
+### Task 1
 
-http://localhost:3000/about
-🧪 Sample Requests
-Task 1
+```text
 GET http://localhost:3000/
 GET http://localhost:3000/about
 GET http://localhost:3000/contact
-Task 2
+```
+
+### Task 2
+
+```text
 GET http://localhost:3000/user/john
-Task 3
+```
+
+### Task 3
+
+```text
 GET http://localhost:3000/product/101/electronics
-Task 4
+```
+
+### Task 4
+
+```text
 GET http://localhost:3000/search?name=john&role=developer
-Task 5
+```
 
-The terminal displays information such as:
+---
 
-GET /
-GET /about
-GET /user/john
-GET /search?name=john&role=developer
- Learning Outcomes
+##  Learning Outcomes
 
 Through this assignment, I learned:
 
-How to create an Express.js server
-How to create basic GET routes
-How to use dynamic route parameters
-How to handle multiple route parameters
-How to read query parameters using req.query
-How to access request method and URL
-How the request-response cycle works in Express.js
-How to test API routes using a browser or API testing tool
+* Creating an Express.js server
+* Creating basic GET routes
+* Using dynamic route parameters
+* Handling multiple route parameters
+* Reading query parameters using `req.query`
+* Accessing request method and URL
+* Understanding the request-response cycle
+* Testing API routes using Thunder Client
 
-##Conclusion
+---
 
-This assignment provides a basic understanding of routing and request handling
-in Express.js. It demonstrates how different types of data can be received
-through URLs, route parameters, and query parameters.
+## Conclusion
+
+This assignment provides a basic understanding of routing and request handling in Express.js.
+
+It demonstrates how data can be received through basic routes, route parameters, multiple route parameters, and query parameters.
+
+```
+
