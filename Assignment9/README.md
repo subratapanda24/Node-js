@@ -1,6 +1,6 @@
 # Assignment 9 – Update and Delete Users (Express, MongoDB, Mongoose)
 
-## 📌 Problem Statement
+## Problem Statement
 
 An Express.js application that connects to MongoDB using Mongoose and performs update and delete operations on existing user data.
 
@@ -73,7 +73,7 @@ MongoDB connected successfully
 
 Terminal output confirming a successful MongoDB connection.
 
-![MongoDB Connected](screenshots/mongodb-connected.png)
+![MongoDB Connected](screenshots/mongodb.png)
 
 ## API Endpoints
 
