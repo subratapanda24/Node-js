@@ -4,11 +4,13 @@ const app = express();
 
 app.use(express.json());
 
-
 app.get("/getData", (req, res) => {
-    res.send("Server is running successfully!");
+    res.json({
+        name: "Subrata",
+        age: 18,
+        course: "BTech CSE"
+    });
 });
-
 
 app.post("/data", (req, res) => {
     const data = req.body;
